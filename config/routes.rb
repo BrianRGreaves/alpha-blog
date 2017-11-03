@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'about', to: 'pages#about'
   get 'home', to: 'pages#home'
+  
+  resources :articles #Gives us a lot of articles resources
+  
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
